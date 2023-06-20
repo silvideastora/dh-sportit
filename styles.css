@@ -71,10 +71,12 @@ main {
   height: 500px;
   text-align: right;
 }
-.phrase-container h1 {
+.phrase-container h2 {
   color: #232C50;
-  margin-top: 1.75rem;
+  font-size: 3.125rem;
   font-weight: 700;
+  margin-top: 1.75rem;
+  padding-bottom: 2rem;
 }
 .phrase-container button {
   margin-top: 1.875rem;
@@ -98,13 +100,13 @@ section .pros,
 .best-teams , 
 .go-for-it {
   width: 100%;
-  padding:0 8rem;
+  padding:0 5rem;
   color: #ffffff;
   display: flex;
   justify-content: space-evenly;
 }
 
-/* Seccion de Articles */
+/* Sección de Articles */
 
 .article-container{
   display: flex;
@@ -178,7 +180,7 @@ section .pros,
   justify-content: center;
   align-content: center;
   padding-top: 1rem;
-  padding-bottom: 180px;
+  padding-bottom: 100px;
 }
 /* Sección separador*/
 
@@ -215,9 +217,6 @@ footer .links-footer p:nth-child(n+2) {
 footer .community-footer p:nth-child(n+2) {
   margin-top: 8px;
 }
-footer .logosicons-footer {
-  display: block;
-}
 .social-media {
   width: 22%;
   display: flex;
@@ -233,14 +232,16 @@ footer .logosicons-footer {
   background-color: #1E1E26;
   color: #ffffff;
   text-align: end;
-  padding-right:rem;
+  padding-bottom: 2rem;
+  padding-right:12rem;
 }
 .copyrights-footer p {
-  font-size: 12.5px;
+  font-size: 0.781rem;
   font-weight: 400;
 }
+
 /* Estilos generales para todas las pantallas */
-/* Media queries para adaptar los estilos a pantallas aún más pequeñas */
+/* Media queries para adaptar los estilos a pantallas moviles */
 
 @media only screen and (max-width: 480px) {
   /* Estilos de la navbar */
@@ -327,7 +328,9 @@ footer .logosicons-footer {
     padding: 2rem 0;
     width: 100%;
   }
-
+  .images-footer {
+    width: 100%;
+  }
   .logosicons-footer {
     width: 100%;
     display: flex;
@@ -340,16 +343,18 @@ footer .logosicons-footer {
   }
   .icons-footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
-  }
-  .icons-footer img {
-    text-align: center;
   }
 
   /* Estilos de derechos reservados */
   .copyrights-footer {
     text-align: center;
+    padding: 1rem ;
     width: 100%;
+  }
+  .copyrights-footer p {
+    color: #ffffff;
+    font-size: 0.781rem;
   }
 }
